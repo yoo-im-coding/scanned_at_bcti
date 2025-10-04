@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agri Info</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div
+        class="navbar bg-base-100/60 backdrop-blur supports-[backdrop-filter]:bg-base-100/60 sticky top-0 z-50 border-b border-base-200 shadow-md px-4">
+        <div class="flex-1">
+            <a class="btn btn-ghost text-xl"><span class="text-success">Agri</span>Info</a>
+        </div>
+        <div class="flex-none">
+            <details class="dropdown dropdown-end">
+                <summary class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </summary>
+                <ul class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/farmingGuide.html">Farming Guide</a></li>
+                    <li><a href="/crops.html">Crops</a></li>
+                    <li><a href="/pestControl.html">Pest Control</a></li>
+                    <li><a href="/contact.html">Contact</a></li>
+                </ul>
+            </details>
+
+            <ul class="menu menu-horizontal px-1 hidden lg:flex">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/farmingGuide.html">Farming Guide</a></li>
+                <li><a href="/crops.html">Crops</a></li>
+                <li><a href="/pestControl.html">Pest Control</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- nav end -->
+
+
+    <!-- main strat -->
+    <main class="p-4">
+        <h1 class="text-2xl font-bold mb-4 text-center">Crops Information</h1>
+        <p class="text-center mb-6">Explore various crops and their details.</p>
+
+
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-24 mx-auto flex flex-wrap">
+                <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+                    <img alt="feature" class="object-cover object-center h-full w-full"
+                        src="/images/pexels-mvdheuvel-2284170.jpg">
+                </div>
+                <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+                    <div class="flex flex-col mb-10 lg:items-start items-center">
+                        <div
+                            class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">soil requirements</h2>
+                            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar
+                                toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                            <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col mb-10 lg:items-start items-center">
+                        <div
+                            class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <circle cx="6" cy="6" r="3"></circle>
+                                <circle cx="6" cy="18" r="3"></circle>
+                                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Varities</h2>
+                            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar
+                                toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                            <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col mb-10 lg:items-start items-center">
+                        <div
+                            class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+                                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <div class="flex-grow">
+                            <h2 class="text-gray-900 text-lg title-font font-medium mb-3">Cultivation method</h2>
+                            <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar
+                                toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
+                            <a class="mt-3 text-indigo-500 inline-flex items-center">Learn More
+                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- present start -->
+        <div class=" mt-8">
+            <h2 class="text-xl font-bold mb-4 mr-40 pl-10">Crop Categories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8">
+                <!-- card1 -->
+                <div class="card bg-base-100 w-full shadow-sm">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/pexels-markusspiske-1268101.jpg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Grains</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions">
+                            <a href="/farmingGuide.html"><button class="btn btn-primary">Farming Guide</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- card1 end -->
+                <!-- card2 -->
+                <div class="card bg-base-100 w-full shadow-sm">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/pexels-markusspiske-1268101.jpg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Fruits</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions">
+                            <a href="/crops.html"> <button class="btn btn-primary">Fruits</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- card2 end -->
+                <!-- card3 -->
+                <div class="card bg-base-100 w-full shadow-sm">
+                    <figure class="px-10 pt-10">
+                        <img src="/images/pexels-markusspiske-1268101.jpg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Vegetables</h2>
+                        <p>A card component has a figure, a body part, and inside body there are title and actions parts
+                        </p>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Vegetables</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card3 end -->
+            </div>
+
+        </div>
+        <!-- preset end -->
+    </main>
+    <!-- main end -->
+
+
+    <!-- Footer -->
+    <footer class="footer footer-center p-4  text-base-content">
+
+        <p>© 2025 Agri Info. All rights reserved.</p>
+
+    </footer>
+
+</body>
+
+</html>
